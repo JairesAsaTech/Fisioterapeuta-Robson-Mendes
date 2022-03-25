@@ -1,0 +1,649 @@
+@import url('https://fonts.googleapis.com/css2?family=Akaya+Telivigala&family=Bebas+Neue&family=Open+Sans:wght@500&family=Permanent+Marker&display=swap');
+ 
+/*   importa as fontes para o site   */
+
+*{
+
+    margin:0px;
+    padding: 0px;
+}
+   /*  quando iniciar o site a margem e o preenchimento vão ser 0px   */
+
+a{
+    text-decoration: none;
+}
+
+   /*   tag que vai remover a decoração padrão do link   */
+
+body{
+    overflow-x: hidden;
+}
+
+/*   serve para  não ter a barra de rolagem lateral  */
+
+nav{
+    display: flex;
+    align-items: center;
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    background-color: white;
+    height: 12vh;
+    width:2999vh ;
+    position:fixed;
+    z-index: 1 ;
+    border-bottom: #00B45B 2px solid;
+} 
+
+   /* essas tags irão ajustar a cor, o posicionamento, a altura e a largura, fonte do texto, adicionar uma linha verde como detalhamento e definir como elemento principal, ou seja, vai permanecer fixo sobre todas as partes do site */
+
+.nav-list{
+    display: flex;
+    list-style: none;
+    position: absolute;
+    top: 28px;
+    left: 950px;
+}
+.nav-list li{
+    margin-left: 43px;
+    letter-spacing: 5px;
+ 
+}
+
+/*   essas tags irão ajustar os ícones das redes sociais em linha, com espaçamento no topo do site e a esquerda, espaçamento entre as letras, em uma posição absoluta e sem decoração   */
+
+.menu{
+    cursor: pointer;
+    max-width:50px ;
+    max-height:50px;
+    padding-right:8px;
+}
+
+.face{
+    min-width: 10px;
+    max-width: 34px;
+    border-radius: 5px;
+    padding-left: 15px;
+    margin-left: 0px;
+   }
+ 
+   .insta{
+    
+    max-width:50px ;
+    max-height:50px;
+}
+
+.whats{
+    
+    max-width:50px ;
+    max-height:50px;
+
+    
+}
+
+.logo{
+    max-width:350px ;
+    max-height:100px;
+    padding-top: 0px;
+    margin-left: 25px;
+
+    
+}
+
+/*  essas tags irão definir a altura e largura dos ícones, posicionamento a esquerda e a direita e um cursor pointer para o icone do menu */
+
+.face:hover{
+    transform:scale(1.25,1.25);
+   }
+
+.insta:hover{
+   transform: scale(1.25,1.25);
+   }
+
+.whats:hover{
+    transform:scale(1.25,1.25);
+   }
+
+.menu:hover{
+    transform:scale(1.25,1.25);
+   }
+
+/*   essas tags servem para quando o usuário passar o cursor por cima do ícone ele aumentar de tamanho */
+
+.menu-hamburger{
+    position: absolute;
+    top: 1000%;
+    background-color: #2b2a2a;
+    color: #EAEAEA; 
+   transition: 0.5s;
+   height: 100%;
+   width: 710px;
+   position: fixed;
+   top: 0vh;
+   left: 993vh;
+   
+}
+
+.menu-hamburger a{
+    display: block;
+    margin-top: -2vh;
+  }
+
+/*  tags que irão mexer somente no menu, alterando suas cores, dimensões e posicionamentos.  */
+
+  .fechar{
+    cursor: pointer;
+}
+
+/*   tag que serve para quando o usuário passar o cursor do mouse por cima da palavra, o cursor mudar para pointer  */
+
+  nav a:hover{
+    color: #00ff15;
+    transition: 0.3s;
+}
+
+/*   tag que serve para quando o usuário passar o cursor do mouse por cima da palavra, ela ficar da cor verde */
+
+nav a{
+
+    color:white;
+    font-size: 25px;
+    display: block;
+    }
+
+/*  tags que irão mexer somente no menu, alterando suas cores, dimensões e posicionamentos.  */
+
+.nav-menu li{
+    letter-spacing: 5px;
+    display: block;
+    top: 0%;
+    margin:0px;
+    padding: 22.00px;
+    width: 800px;
+   
+}
+
+.nav-menu{
+    position: absolute;
+    top: 2.50%;
+    left: -2%;
+    display: block;
+    list-style:circle;
+}
+
+/*  tags que irão mexer somente no menu, alterando suas dimensões, posicionamento,  espaçamento entre letras e detalhamento */
+
+.slider{
+    width: 120%;
+    height: 900px;
+    overflow: hidden; 
+}
+
+.slides{
+    display: flex;
+}
+
+.slide1{
+    max-width: 100%;
+    max-height:90%;
+    padding-top:90px;
+  
+}
+.slide2{
+    max-width: 100%;
+    height:800px;
+    padding-top:90px;
+  
+}
+.slide3{
+    max-width: 100%;
+    height:800px;
+    padding-top:90px;
+  
+}
+
+.slides{
+    display: flex;
+    width: 400%;
+    height: 100%;
+}
+.slide{
+    width: 25%;
+    transition: 0.5s;
+}
+
+
+/*  essas tags irão definir as dimesões do slideshow, deixa-los em linha  e aplicar uma transição */
+
+#radio1:checked ~ .first{
+    margin-left: 0;
+}
+#radio2:checked ~ .first{
+   margin-left: -25%;
+}
+#radio3:checked ~ .first{
+   margin-left: -50%;
+}
+
+/* tag que vai passar o slideshow para a próxima imagem */
+
+input{
+    display: none;
+}
+
+/* vai desaparecer a caixa do input type radio */
+
+.navigation-bar{
+    position: absolute;
+    bottom: 20px;
+    display: flex;
+    left: 50%;
+    top: 850px;
+    transform: translateX(-50%);
+}
+
+/* tag para dimesões e posicionametos dos botões*/
+
+.manual-btn{
+    border: 10px solid ;
+    border-color: #009700;
+    border-radius: 20px;
+    cursor: pointer;
+}
+
+/* essa tag vai definir a cor dos botões, o formato e um cursor */
+
+.manual-btn:hover{
+    border-color: #0c6400;
+    transition: 0,4s;
+}
+
+/*  tag que serve para quando o usuário passar o cursor do mouse por cima do botão, ele ficar da cor verde escuro */
+
+.manual-btn:not(:last-child){
+    margin-right: 40px;
+}
+
+
+
+.imagem2{
+    position: absolute;
+    top: 1050px;
+    left: 970px;
+    width: 300px;
+    height:300px;
+}
+
+/* para definir as posições e dimensões da imagem */
+
+.imagem3{
+    position: absolute;
+    left: 850px;
+    top: 1850px;
+    width: 530px;
+    height: 320px;
+}
+
+/* para definir as posições e dimensões da imagem */
+
+.h1{
+
+    font-family:open sans,negrito;
+color:#00B45B;
+padding-left:60px;
+font-size: 27px;
+}
+
+/* para definir a cor do título, tamanho, espaçamento a esquerda e uma fonte */
+
+
+.h2{
+
+font-family:open sans,negrito;
+color:#2FB875;
+padding-left:60px;
+font-size: 24px;
+padding-top:-500px;
+}
+
+/* para definir a cor do subtítulo, tamanho da fonte, espaçamento a esquerda, espaçamento ao topo e uma fonte */
+
+
+.texto{
+color:#404040;
+padding-left:60px;
+font-size: 24px;
+max-width: 800px;   
+font-family: 'Open Sans', sans-serif;     
+}
+
+/* para definir a cor do texto, espaçamento a esquerda, tamanho da fonte, largura máxima do texto e uma fonte */
+
+    
+.texto-dermato{
+
+font-family: 'Open Sans', sans-serif;   
+color:#404040;
+padding-left:60px;
+font-size: 24px;
+width: 800px;      
+}
+    
+/* defini a cor do texto, espaçamento a esquerda, tamanho da fonte, largura do texto e uma fonte */
+
+
+
+.primeiro-texto{
+
+width: 1190px;
+
+}
+
+/* defini a largura que o texto irá ocupar */
+
+
+.robson{
+
+ padding-left: 24px;
+width: 400px;
+height: 400px;
+padding-top: 50px;
+
+}
+
+/* vai definir um espaçamento a esquerda e ao topo e também ás dimensões */
+
+.nome-biografia{
+
+position: absolute;
+top: 3188px;
+left: 124px;
+font-family: 'Open Sans', sans-serif; 
+font-size: 24px;
+color:#404040;
+
+}
+
+/* vai definir o posicionamento, o espaçamento a esquerda e ao topo, a fonte do texto, o tamanho da fonte e a cor */
+
+.biografia{
+
+position: absolute;
+top: 2930px;
+font-family: 'Open Sans', sans-serif;   
+color:#404040;
+font-size: 28px;
+padding-left: 33%;
+width: 800px;
+}
+
+/* vai definir o posicionamento, o espaçamento a esquerda e ao topo, a fonte do texto, o tamanho da fonte e a cor e a largura do texto */
+
+.icon-finais{
+position: absolute;
+top: -155px;
+left: 15px;
+}
+
+/* vai definir o posicionamento, o espaçamento a esquerda e ao topo dos ícones no final do site */
+
+.face-f{
+position: absolute;
+width: 20px;
+top: 3415px;
+left: 18px;
+}
+
+.insta-f{
+position: absolute;
+width: 20px;
+top: 3458px;
+left: 18px;
+}
+
+.whats-f{
+position: absolute;
+width: 20px;
+top: 3495px;
+left: 18px;
+}
+
+.email-f{
+position: absolute;
+width: 20px;
+top: 3535px;
+left: 18px;
+}
+
+/* essas tags vão definir o posicionamento dos ícones a esquerda e ao topo e também as dimensões dos ícones */
+
+.face-f:hover{
+
+    transform:scale(1.25,1.25);
+    
+    }
+
+.insta-f:hover{
+
+    transform:scale(1.25,1.25);
+        
+    }
+
+.whats-f:hover{
+
+    transform:scale(1.25,1.25);
+            
+    }
+
+.email-f:hover{
+
+    transform:scale(1.25,1.25);
+        
+    }
+
+
+/*  essas tags servem para quando o usuário passar o cursor por cima dos ícones eles aumentarem de tamanho */
+
+
+
+.icon-finais2{
+
+position: absolute;
+width: 20055px;
+top: -155px;
+left: 20px;
+
+}
+
+/* vai definir largura, o posicionamento, o espaçamento a esquerda e ao topo dos ícones no final do site */
+
+.local-f{
+
+position: absolute;
+width: 17px;
+top: 3410px;
+left: 400px;
+
+}
+
+.casa-f{
+
+position: absolute;
+width: 25px;
+top: 3452px;
+left: 398px;
+    
+  }
+
+.delivery-f{
+
+    position: absolute;
+    width: 25px;
+    top: 3495px;
+    left: 398px;
+        
+    }
+
+/* essas tags vão definir o posicionamento dos ícones a esquerda e ao topo e também as dimensões dos ícones */
+
+
+.local-f:hover{
+
+transform:scale(1.25,1.25);
+
+}
+
+.casa-f:hover{
+
+transform:scale(1.25,1.25);
+
+}
+
+.delivery-f:hover{
+transform:scale(1.25,1.25);
+}
+
+/*  essas tags servem para quando o usuário passar o cursor por cima dos ícones eles aumentarem de tamanho */
+
+
+.logo-final{
+
+position: absolute;
+width: 400px;
+top: 3270px;
+left: 800px;
+}
+
+/* irá definir o posicionamento do ícone logo a esquerda e ao topo, e também a dimensão do ícone */
+
+
+.icon-nomes{
+
+position: absolute;
+width: 2000px;
+top: -155px;
+left: 20px;
+
+}
+
+/* irá definir o posicionamento geral dos textos dos ícones a esquerda e ao topo e também a dimensão em que os textos irão ocupar */
+
+.nome-face{
+
+position: absolute;
+font-size: 19px;
+top: 3415px;
+left: 45px;
+font-family: 'Open Sans', sans-serif; 
+color:#404040;
+
+}
+
+.nome-insta{
+
+position: absolute;
+font-size: 19px;
+top: 3455px;
+left: 45px;
+font-family: 'Open Sans', sans-serif; 
+color:#404040;
+
+}
+
+.nome-whats{
+
+position: absolute;
+font-size: 19px;
+top: 3492px;
+left: 45px;
+font-family: 'Open Sans', sans-serif; 
+color:#404040;
+
+}
+
+.nome-email{
+
+position: absolute;
+font-size: 19px;
+top: 3530px;
+left: 45px;
+font-family: 'Open Sans', sans-serif; 
+color:#404040;
+    
+}
+
+.nome-local{
+
+position: absolute;
+font-size: 19px;
+top: 3409px;
+left: 430px;
+font-family: 'Open Sans', sans-serif; 
+color:#404040;
+    
+}
+
+.nome-casa{
+
+position: absolute;
+font-size: 18px;
+top: 3440px;
+left: 430px;
+width: 250px;
+font-family: 'Open Sans', sans-serif; 
+color:#404040;
+    
+}
+
+.nome-delivery{
+
+position: absolute;
+font-size: 19px;
+top: 3492px;
+left: 430px;
+font-family: 'Open Sans', sans-serif; 
+color:#404040;
+    
+}
+
+/* essas tags irão ajustar melhor o posicionamento dos textos dos ícones a esquerda e ao topo, irão definir a cor dos textos, a largura em que os textos poderão ocupar, e também o tamanho das fontes dos textos */
+
+
+.nome-face:hover{
+
+transform:scale(0.90,0.90);
+
+}
+
+
+.nome-insta:hover{
+
+transform:scale(0.90,0.90);
+
+ }
+
+
+
+.nome-whats:hover{
+
+transform:scale(0.90,0.90);
+
+}
+                
+.nome-local:hover{
+
+transform:scale(0.90,0.90);
+
+}
+
+.nome-casa:hover{
+
+transform:scale(0.90,0.90);
+
+}
+
+
+
+.nome-delivery:hover{
+transform:scale(0.90,0.90);
+}
+                
+/*  essas tags servem para quando o usuário passar o cursor por cima dos textos do ícones eles diminuirem de tamanho */
